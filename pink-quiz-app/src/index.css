@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffc1e3, #ffd6f9);
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  color: #ff4da6;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #663399;
+}
+
+.question-box p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.option-btn {
+  background: #fbeaff;
+  border: 2px solid #d39dd3;
+  color: #663399;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+  background: #f3d5f9;
+}
+
+.option-btn.selected {
+  background: #e6ccff;
+  border-color: #b266ff;
+}
+
+.feedback {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.feedback.correct {
+  color: #00cc66;
+}
+
+.feedback.wrong {
+  color: #ff3300;
+}
+
+.next-btn, .restart-btn {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background: linear-gradient(to right, #ff99cc, #ff66cc);
+  border: none;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+}
+
+.next-btn:hover, .restart-btn:hover {
+  opacity: 0.9;
+}
